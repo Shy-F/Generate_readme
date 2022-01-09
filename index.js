@@ -143,8 +143,18 @@ const questions = () => {
 }; //end of questions
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), err => err ? console.log(err) : console.log('Success!'))
+//function writeToFile(fileName, data) {
+  //  fs.writeFile(fileName, generateMarkdown(data), err => err ? console.log(err) : console.log('Success!'))
+//};
+const writeFile = data => {
+    fs.writeFile('README.md', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log('Success!')
+        }
+    })
 };
 
 // TODO: Create a function to initialize app
@@ -157,7 +167,7 @@ function init() {
     })
     //display data on page
     .then(data => {
-        return writeToFile(data);
+        return writeFile(data);
     })
     //catch errors
     .catch(err => {
