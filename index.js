@@ -75,7 +75,7 @@ const questions = () => {
 },
 {
     type: 'input',
-    name: 'Contributing',
+    name: 'Contributors',
     message: 'How can other developers contribute?',
     validate: nameInput => {
         if (nameInput){
