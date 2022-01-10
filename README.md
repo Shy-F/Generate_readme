@@ -6,6 +6,7 @@
 
   This is an app that creates a README.md file from the prompted questions in the terminal
 
+[![generate readme](https://watch.screencastify.com/v/vkM16tptgyHT4ghOijMA)
   
 
   ##Table of Contents
