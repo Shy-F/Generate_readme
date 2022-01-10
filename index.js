@@ -62,7 +62,7 @@ const questions = () => {
 },
 {
     type: 'input',
-    name: 'Usage',
+    name: 'usage',
     message: 'How is this app used?',
     validate: nameInput => {
         if (nameInput){
@@ -75,7 +75,7 @@ const questions = () => {
 },
 {
     type: 'input',
-    name: 'Contributors',
+    name: 'contributors',
     message: 'How can other developers contribute?',
     validate: nameInput => {
         if (nameInput){
@@ -88,7 +88,7 @@ const questions = () => {
 },
 {
     type: 'input',
-    name: 'Test',
+    name: 'test',
     message: 'How can app be tested?',
     validate: nameInput => {
         if (nameInput){
@@ -101,7 +101,7 @@ const questions = () => {
 },
 {
     type: 'input',
-    name: 'Username',
+    name: 'username',
     message: 'What is your GitHub username?',
     validate: nameInput => {
         if (nameInput){
